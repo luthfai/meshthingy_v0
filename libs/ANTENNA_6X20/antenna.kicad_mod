@@ -1,0 +1,340 @@
+(footprint "XDCR_YFGC012WWA"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "E1"
+		(at -4.3 -9.5 0)
+		(layer "F.SilkS")
+		(uuid "62b21912-757e-4cb6-a7e6-c8ef358d19af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "20x6mm Ceramic Patch Antenna"
+		(at -27.5 -3.1 0)
+		(layer "F.Fab")
+		(uuid "1c80211b-422f-453b-bc29-64c6adf5e760")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17b1c7d1-9a97-4079-9926-ade03944097c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Antennas Embedded Antenna, Ceramic Patch, Adhesive & Soldering mount, 12 12  4mm, Passive, GNSS L1*1,RoHS&REACH Compliant"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fad06547-c28e-41ff-b8b7-242b0e38aaa5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Quectel"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cdb8c12c-8c3c-4497-af26-eae5e3fc30f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MAXIMUM_PACKAGE_HEIGHT" "4.1mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8580c92e-7ebe-4757-af80-84a1443a2a03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package" "None"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8210abf-ff75-4dcc-9840-bcb9e3b68ebd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price" "None"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "28e8e337-dbdc-4335-aa49-ab7abc6c97ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Check_prices" "https://www.snapeda.com/parts/YFGC012WWA/Quectel/view-part/?ref=eda"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "49c96668-d529-499f-9b6e-9858a4c969e3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "STANDARD" "Manufacturer Recommendations"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bc7494bb-0079-4318-8848-2517af14db7d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "PARTREV" "1.0"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "755050ef-a894-41f3-8aff-b5a8f07c92f8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "SnapEDA_Link" "https://www.snapeda.com/parts/YFGC012WWA/Quectel/view-part/?ref=snap"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cef05c66-3f40-4bbd-b02e-13ff22f48517")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "YFGC012WWA"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "be64b0ce-004e-4631-80f9-ac4cddad0650")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=15859793&manufacturer=Quectel&part_name=YFGC012WWA&search_term=patch antenna"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "37bcf374-4fe5-41a6-90a9-21d68cf2e0c4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Availability" "In Stock"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e9ab6992-f9f9-4a28-b2f8-0a7c54bdb89c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MANUFACTURER" "Quectel"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fbee91f3-cc16-4f9d-be00-0fea7e9d72c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "meshtastic-v0.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.3 -10.3)
+		(end 3.3 10.3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2d8bb884-d1cd-43e3-9afd-8d1426fe6b24")
+	)
+	(fp_line
+		(start -3 -10)
+		(end 2 -10)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "31c2c56f-2c18-4a2f-bcad-e53481aa4bb5")
+	)
+	(fp_line
+		(start -3 10)
+		(end -3 -10)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0f095f41-1167-4f18-8025-f93d35556eb1")
+	)
+	(fp_line
+		(start 2 -10)
+		(end 3 -9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f77e6c5f-87fc-40b5-930f-8b9e6514402e")
+	)
+	(fp_line
+		(start 3 -9)
+		(end 3 10)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "985a1a77-9d8b-401a-b629-e6cf998495eb")
+	)
+	(fp_line
+		(start 3 10)
+		(end -3 10)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a6fce8d5-81d7-4c9c-9068-cd8f1d1ce6d0")
+	)
+	(fp_text user "Bottom Antipad is not present in the footprint to allow routing"
+		(at -33.5 1.4 0)
+		(layer "F.Fab")
+		(uuid "529d67f2-30e0-4869-a0e1-89d5b5ea876a")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 1.2 0.2)
+		(size 0.95 0.95)
+		(drill 0.95)
+		(layers "*.Cu" "*.Mask")
+		(uuid "173ab578-0416-4b92-a193-256ad2fc5bb7")
+	)
+	(pad "1" smd circle
+		(at 1.18 0.2)
+		(size 2 2)
+		(layers "B.Cu" "B.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "0b45b5ca-ddbd-42e1-8fd7-b9baba5aa3c5")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "3f24df84-986f-4e75-8004-275cc63a32ee")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 1.5)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 2.7 0.2) (xy 2.692777 0.347026) (xy 2.671178 0.492635) (xy 2.635411 0.635427) (xy 2.585819 0.774025)
+				(xy 2.522882 0.907095) (xy 2.447204 1.033355) (xy 2.359516 1.15159) (xy 2.26066 1.26066) (xy 2.15159 1.359516)
+				(xy 2.033355 1.447204) (xy 1.907095 1.522882) (xy 1.774025 1.585819) (xy 1.635427 1.635411) (xy 1.492635 1.671178)
+				(xy 1.347026 1.692777) (xy 1.2 1.7) (xy 1.052974 1.692777) (xy 0.907365 1.671178) (xy 0.764573 1.635411)
+				(xy 0.625975 1.585819) (xy 0.492905 1.522882) (xy 0.366645 1.447204) (xy 0.24841 1.359516) (xy 0.13934 1.26066)
+				(xy 0.040484 1.15159) (xy -0.047204 1.033355) (xy -0.122882 0.907095) (xy -0.185819 0.774025) (xy -0.235411 0.635427)
+				(xy -0.271178 0.492635) (xy -0.292777 0.347026) (xy -0.3 0.2) (xy -0.292777 0.052974) (xy -0.271178 -0.092635)
+				(xy -0.235411 -0.235427) (xy -0.185819 -0.374025) (xy -0.122882 -0.507095) (xy -0.047204 -0.633355)
+				(xy 0.040484 -0.75159) (xy 0.13934 -0.86066) (xy 0.24841 -0.959516) (xy 0.366645 -1.047204) (xy 0.492905 -1.122882)
+				(xy 0.625975 -1.185819) (xy 0.764573 -1.235411) (xy 0.907365 -1.271178) (xy 1.052974 -1.292777)
+				(xy 1.2 -1.3) (xy 1.347026 -1.292777) (xy 1.492635 -1.271178) (xy 1.635427 -1.235411) (xy 1.774025 -1.185819)
+				(xy 1.907095 -1.122882) (xy 2.033355 -1.047204) (xy 2.15159 -0.959516) (xy 2.26066 -0.86066) (xy 2.359516 -0.75159)
+				(xy 2.447204 -0.633355) (xy 2.522882 -0.507095) (xy 2.585819 -0.374025) (xy 2.635411 -0.235427)
+				(xy 2.671178 -0.092635) (xy 2.692777 0.052974)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
