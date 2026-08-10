@@ -6,6 +6,10 @@
 
 <sub>KiCad 10 · 2-layer · 71 × 46 mm · ESP32-S3 + SX1262-class LoRa · USB-C · Li-Ion</sub>
 
+<p align="center">
+  <img src="docs/meshtastic-v0-f.png" alt="meshthingy v0 board, front view" width="820">
+</p>
+
 ---
 
 ## What this board is for
@@ -135,13 +139,65 @@ flowchart LR
 | --- | --- |
 | **Dimensions** | 71.00 × 46.00 mm, 1.0 mm corner radius |
 | **Stackup** | 2 layers (F.Cu / B.Cu), 1.6 mm |
-| **Components** | 88 footprints, 342 pads, 371 vias |
+| **Components** | 90 footprints, 342 pads (318 SMD, 22 through-hole), 371 vias |
+| **Density** | 65% front, 9% back — almost everything lives on the front |
 | **Copper** | GND pour on both layers, with keepout zones under the antennas |
 | **Design rules** | 0.175 mm clearance, 0.2 mm minimum track, 0.6 / 0.3 mm vias |
 | **Assembly** | All SMD, 0805 passives — hand-solderable |
 
 Everything routes on two layers, which keeps this a cheap board to order from any
 prototype fab at standard tolerances.
+
+### Assembled views
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/meshtastic-v0-f.png" alt="Front, populated" width="100%"><br>
+      <sub><b>Front</b> — LoRa and GNSS modules, ESP32-S3, USB-C, buzzer, GPS backup cell</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/meshtastic-v0-b.png" alt="Back, populated" width="100%"><br>
+      <sub><b>Back</b> — labelled test points for every bus, plus the SMA edge launch</sub>
+    </td>
+  </tr>
+</table>
+
+### PCB layer views
+
+Copper, silkscreen and board outline, plotted straight from the layout. The back
+view is mirrored so its silkscreen reads the right way round.
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/layers-front.svg" alt="Front copper and silkscreen" width="100%"><br>
+      <sub><b>F.Cu + F.SilkS</b> — signal routing over the front ground pour</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/layers-back.svg" alt="Back copper and silkscreen" width="100%"><br>
+      <sub><b>B.Cu + B.SilkS</b> — mirrored; back pour with the test-point field</sub>
+    </td>
+  </tr>
+</table>
+
+The RF section is deliberately sparse: the pours are cut back under both antenna
+launches, and the GPS patch keepout is marked on the silkscreen so nothing gets
+placed under it during assembly.
+
+Regenerate these plots after any layout change:
+
+```bash
+kicad-cli pcb export svg --output docs/layers-front.svg \
+  --layers "F.Cu,F.SilkS,Edge.Cuts" \
+  --page-size-mode 2 --exclude-drawing-sheet --check-zones --mode-single \
+  meshtastic-v0.kicad_pcb
+
+kicad-cli pcb export svg --output docs/layers-back.svg \
+  --layers "B.Cu,B.SilkS,Edge.Cuts" --mirror \
+  --page-size-mode 2 --exclude-drawing-sheet --check-zones --mode-single \
+  meshtastic-v0.kicad_pcb
+```
 
 ## Pin map
 
