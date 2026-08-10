@@ -1,3 +1,39 @@
-# KiCad local history exclusions. Edit to add your own rules.
+# --- KiCad local history (nested git repo created by KiCad 10, ~77 MB) ---
+# Never commit this: adding it would create a broken gitlink/submodule.
+.history/
+
+# --- KiCad working / cache files ---
 fp-info-cache
 *-backups/
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+*.lck
+_autosave-*
+~*.lck
+
+# --- Generated fabrication & documentation outputs ---
+# Regenerate with kicad-cli; keep releases as tagged zips instead.
+/fab/
+/gerbers/
+/output/
+*.gbr
+*.gbrjob
+*.gtl
+*.gbl
+*.gts
+*.gbs
+*.gto
+*.gbo
+*.gtp
+*.gbp
+*.gta
+*.gba
+*.gm1
+*.drl
+*.zip
+
+# --- OS noise ---
+.DS_Store
+Thumbs.db
