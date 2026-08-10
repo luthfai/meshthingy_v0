@@ -15,7 +15,7 @@ see [Known issues](#known-issues) below.
 | --- | --- |
 | DRC (`--severity-all`) | 0 violations, 0 unconnected pads |
 | Schematic parity | 3 footprint mismatches |
-| ERC (`--severity-all`) | 8 errors, 15 warnings |
+| ERC (`--severity-all`) | 8 errors, 14 warnings |
 
 ## Board
 
@@ -66,11 +66,13 @@ Run the checks yourself with the commands below before trusting this list.
   silkscreen clearance/overlap, missing courtyard, and text height/thickness.
   The clean DRC result does not cover these.
 - Per-rail labels (`GPS_VDD`, `LORA_VDD`, `ACCEL_VDD`, `BME_VDD`, `3V3`) are all
-  electrically merged into `+3V3`. Fine if the names are decorative; a bug if
-  separate filtered rails were intended.
-- `libs/RA-01SH/` is not registered in either library table — the `U4` symbol
-  works only from the schematic's embedded cache.
+  electrically merged into `+3V3`. **This is intended** — the local labels are
+  documentation only, and the resulting `multiple_net_names` ERC warnings are
+  expected. There is one `+3V3` rail.
 - BOM rows carry no MPN or manufacturer, so the BOM is not yet orderable.
+- Three `lib_symbol_mismatch` warnings (`U3`, `C13`, `LS1`) mean the schematic's
+  embedded symbol cache has drifted from the library files. Update from library
+  in Eeschema when convenient.
 
 ## Checks and outputs
 
