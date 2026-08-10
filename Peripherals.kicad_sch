@@ -1737,6 +1737,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 102.87) (xy 133.35 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37cfe6bd-f837-4a8d-b2eb-43e589248d57")
+	)
+	(wire
+		(pts
 			(xy 139.7 143.51) (xy 144.78 143.51)
 		)
 		(stroke
@@ -1997,6 +2007,26 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 102.87) (xy 133.35 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb0b03dd-456d-4d01-af62-d2e8d4e06aae")
+	)
+	(wire
+		(pts
+			(xy 133.35 109.22) (xy 138.43 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccdb30f5-517c-40cc-8756-a5e63552301c")
+	)
+	(wire
+		(pts
 			(xy 99.06 71.12) (xy 99.06 72.39)
 		)
 		(stroke
@@ -2075,6 +2105,17 @@
 			(justify right)
 		)
 		(uuid "1f39fa1e-a1ea-41fe-b2b0-f9cef75de777")
+	)
+	(hierarchical_label "IO47"
+		(shape bidirectional)
+		(at 129.54 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "329d31c6-4d12-4d13-b0d5-88db4d04f8e2")
 	)
 	(hierarchical_label "IO7"
 		(shape bidirectional)
@@ -2187,7 +2228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06e3eb51-e976-48db-ba4c-22385db3f235")
-		(property "Reference" "TP12"
+		(property "Reference" "SDA1"
 			(at 102.87 102.8699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2248,7 +2289,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP12")
+					(reference "SDA1")
 					(unit 1)
 				)
 			)
@@ -2423,7 +2464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3afb3898-4238-4487-862f-465ff33a30aa")
-		(property "Reference" "TP21"
+		(property "Reference" "VS1"
 			(at 95.25 121.9199 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2484,7 +2525,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP21")
+					(reference "VS1")
 					(unit 1)
 				)
 			)
@@ -2502,7 +2543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c388b11-6579-4a11-946d-984f85d6d978")
-		(property "Reference" "TP17"
+		(property "Reference" "MISO1"
 			(at 149.86 142.2399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2563,7 +2604,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP17")
+					(reference "MISO1")
 					(unit 1)
 				)
 			)
@@ -2747,7 +2788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bcd21cc-0c28-4f56-aa26-ddef87d3ff5d")
-		(property "Reference" "TP15"
+		(property "Reference" "CLK1"
 			(at 149.86 132.0799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2808,7 +2849,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP15")
+					(reference "CLK1")
 					(unit 1)
 				)
 			)
@@ -2826,7 +2867,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b233ce1-3c5e-47d5-bd07-c4323b6b8ff3")
-		(property "Reference" "TP26"
+		(property "Reference" "G2"
 			(at 95.25 137.1599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2887,7 +2928,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP26")
+					(reference "G2")
 					(unit 1)
 				)
 			)
@@ -2905,7 +2946,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e97d3fa-f33a-4568-b4fa-fe9be2bc223c")
-		(property "Reference" "TP23"
+		(property "Reference" "G1"
 			(at 95.25 132.0799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2966,7 +3007,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP23")
+					(reference "G1")
 					(unit 1)
 				)
 			)
@@ -3532,7 +3573,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dabaf55f-d531-49b3-b4b0-60085ac44ab0")
-		(property "Reference" "TP14"
+		(property "Reference" "CSN1"
 			(at 149.86 126.9999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3593,7 +3634,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP14")
+					(reference "CSN1")
 					(unit 1)
 				)
 			)
@@ -3611,7 +3652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1736d02-a832-4801-996c-b9f89ccb7fc3")
-		(property "Reference" "TP13"
+		(property "Reference" "SLC1"
 			(at 102.87 107.9499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3672,7 +3713,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP13")
+					(reference "SLC1")
 					(unit 1)
 				)
 			)
@@ -3783,7 +3824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1c6c604-3c5c-4649-bf34-b528b786651c")
-		(property "Reference" "TP16"
+		(property "Reference" "MOSI1"
 			(at 149.86 137.1599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3844,7 +3885,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP16")
+					(reference "MOSI1")
 					(unit 1)
 				)
 			)
@@ -3862,7 +3903,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f20954fd-2e14-4d98-8f6e-df4e2ac8d5f3")
-		(property "Reference" "TP19"
+		(property "Reference" "IO15"
 			(at 143.51 101.5999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3923,7 +3964,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP19")
+					(reference "IO15")
 					(unit 1)
 				)
 			)
@@ -4019,7 +4060,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa39f62c-f74b-487e-9663-edd5a94eafa9")
-		(property "Reference" "TP22"
+		(property "Reference" "3V3"
 			(at 95.25 126.9999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4080,7 +4121,7 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP22")
+					(reference "3V3")
 					(unit 1)
 				)
 			)
@@ -4098,7 +4139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd7c35c4-3f7a-4677-9d52-772862b898b2")
-		(property "Reference" "TP18"
+		(property "Reference" "IO7"
 			(at 143.51 96.5199 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4159,7 +4200,86 @@
 		(instances
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "TP18")
+					(reference "IO7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 138.43 109.22 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fddfde1d-65bb-43df-94f5-e02d46c2e19f")
+		(property "Reference" "IO47"
+			(at 143.51 107.9499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IO47"
+			(at 143.51 110.4899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 138.43 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 138.43 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7718dd6-dcdb-442f-aa7b-943a91e804d1")
+		)
+		(instances
+			(project "meshtastic-v0"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
+					(reference "IO47")
 					(unit 1)
 				)
 			)

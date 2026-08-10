@@ -344,7 +344,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 193.04) (xy 276.86 193.04)
+			(xy 266.7 195.58) (xy 276.86 195.58)
 		)
 		(stroke
 			(width 0)
@@ -384,7 +384,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 195.58) (xy 270.51 195.58)
+			(xy 276.86 198.12) (xy 270.51 198.12)
 		)
 		(stroke
 			(width 0)
@@ -394,7 +394,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 190.5) (xy 276.86 190.5)
+			(xy 266.7 193.04) (xy 276.86 193.04)
 		)
 		(stroke
 			(width 0)
@@ -474,7 +474,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 198.12) (xy 273.05 220.98)
+			(xy 273.05 200.66) (xy 273.05 220.98)
 		)
 		(stroke
 			(width 0)
@@ -724,7 +724,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 195.58) (xy 270.51 218.44)
+			(xy 270.51 198.12) (xy 270.51 218.44)
 		)
 		(stroke
 			(width 0)
@@ -741,6 +741,16 @@
 			(type default)
 		)
 		(uuid "a98a288f-cf4c-4004-af36-b46b08b11560")
+	)
+	(wire
+		(pts
+			(xy 266.7 187.96) (xy 276.86 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9d32139-44d0-4c97-b89c-52087540d1ec")
 	)
 	(wire
 		(pts
@@ -804,7 +814,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 187.96) (xy 276.86 187.96)
+			(xy 266.7 190.5) (xy 276.86 190.5)
 		)
 		(stroke
 			(width 0)
@@ -914,7 +924,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 198.12) (xy 273.05 198.12)
+			(xy 276.86 200.66) (xy 273.05 200.66)
 		)
 		(stroke
 			(width 0)
@@ -1177,7 +1187,7 @@
 			)
 		)
 		(pin "I2C_SCL" bidirectional
-			(at 276.86 195.58 180)
+			(at 276.86 198.12 180)
 			(uuid "ce066186-04e3-422c-aebc-f56a4c4cc07c")
 			(effects
 				(font
@@ -1187,7 +1197,7 @@
 			)
 		)
 		(pin "I2C_SDA" bidirectional
-			(at 276.86 198.12 180)
+			(at 276.86 200.66 180)
 			(uuid "00b5c58c-834f-4097-ae55-20d788a3f18c")
 			(effects
 				(font
@@ -1237,7 +1247,7 @@
 			)
 		)
 		(pin "IO15" bidirectional
-			(at 276.86 190.5 180)
+			(at 276.86 193.04 180)
 			(uuid "1512fd0a-6bc6-4925-afcf-d2b17d94f365")
 			(effects
 				(font
@@ -1247,7 +1257,7 @@
 			)
 		)
 		(pin "IO7" bidirectional
-			(at 276.86 187.96 180)
+			(at 276.86 190.5 180)
 			(uuid "b00cfaee-8d29-4827-859e-b9ef8c4bde58")
 			(effects
 				(font
@@ -1257,8 +1267,18 @@
 			)
 		)
 		(pin "STATUS_LED" input
-			(at 276.86 193.04 180)
+			(at 276.86 195.58 180)
 			(uuid "fb6fba75-ce14-4087-8d82-57ef8c9a0b29")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO47" bidirectional
+			(at 276.86 187.96 180)
+			(uuid "535c9115-acb3-40f1-abf0-b2823527a4c3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2195,7 +2215,7 @@
 			)
 		)
 		(pin "STATUS_LED" output
-			(at 266.7 193.04 0)
+			(at 266.7 195.58 0)
 			(uuid "7fff115f-1935-4431-a3c2-83cb6e3e19ab")
 			(effects
 				(font
@@ -2235,7 +2255,7 @@
 			)
 		)
 		(pin "IO7" bidirectional
-			(at 266.7 187.96 0)
+			(at 266.7 190.5 0)
 			(uuid "0091ea02-c4bb-4b44-80f5-d42cf524282f")
 			(effects
 				(font
@@ -2245,8 +2265,18 @@
 			)
 		)
 		(pin "IO15" bidirectional
-			(at 266.7 190.5 0)
+			(at 266.7 193.04 0)
 			(uuid "0f359aef-4673-4b1c-b587-ce60c20ae279")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IO47" bidirectional
+			(at 266.7 187.96 0)
+			(uuid "633d008d-1386-4df9-a1f8-7fe250656883")
 			(effects
 				(font
 					(size 1.27 1.27)
