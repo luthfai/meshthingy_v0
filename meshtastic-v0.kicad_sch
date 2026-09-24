@@ -474,6 +474,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 172.72) (xy 276.86 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3915b8fe-88ef-4073-bd9d-11a0e88504e7")
+	)
+	(wire
+		(pts
 			(xy 273.05 200.66) (xy 273.05 220.98)
 		)
 		(stroke
@@ -1279,6 +1289,16 @@
 		(pin "IO47" bidirectional
 			(at 276.86 187.96 180)
 			(uuid "535c9115-acb3-40f1-abf0-b2823527a4c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VIB_MTR" input
+			(at 276.86 172.72 180)
+			(uuid "4222222b-1dd9-442f-8953-a882f37198f4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2277,6 +2297,16 @@
 		(pin "IO47" bidirectional
 			(at 266.7 187.96 0)
 			(uuid "633d008d-1386-4df9-a1f8-7fe250656883")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIB_MTR" output
+			(at 266.7 172.72 0)
+			(uuid "368c552c-6608-438e-aab4-2ad32afef8b1")
 			(effects
 				(font
 					(size 1.27 1.27)

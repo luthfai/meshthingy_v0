@@ -635,6 +635,184 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "SMT-0927-S-14-R:SMT-0927-S-14-R"
 			(pin_names
 				(offset 1.016)
@@ -1596,6 +1774,18 @@
 		)
 	)
 	(junction
+		(at 36.83 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "242ec04b-adae-45cf-8398-488d187c10d0")
+	)
+	(junction
+		(at 45.72 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48edbc7d-eeef-4755-b555-7a0c16c75980")
+	)
+	(junction
 		(at 99.06 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1608,10 +1798,22 @@
 		(uuid "91503616-078a-4473-9073-ba6f913afb04")
 	)
 	(junction
+		(at 45.72 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7f545ef-39d3-4155-9cea-0f5e623bab61")
+	)
+	(junction
 		(at 99.06 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6d41b26-8a3d-433b-9dce-8b771be39301")
+	)
+	(junction
+		(at 45.72 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3150dec-e7c5-4b3d-8777-20fd62ed5023")
 	)
 	(junction
 		(at 87.63 138.43)
@@ -1677,6 +1879,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 62.23) (xy 50.8 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fa3f302-f016-4f1f-a499-50f65e290f18")
+	)
+	(wire
+		(pts
 			(xy 85.09 104.14) (xy 97.79 104.14)
 		)
 		(stroke
@@ -1687,6 +1899,26 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 63.5) (xy 40.64 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19daa77a-966f-406a-8aae-307bfcb126fc")
+	)
+	(wire
+		(pts
+			(xy 31.75 78.74) (xy 36.83 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b315f3b-ebc0-49a8-9931-1d49cfc9d14f")
+	)
+	(wire
+		(pts
 			(xy 142.24 133.35) (xy 144.78 133.35)
 		)
 		(stroke
@@ -1694,6 +1926,16 @@
 			(type default)
 		)
 		(uuid "1c7c5cbf-3826-472f-ba6f-659c6114642a")
+	)
+	(wire
+		(pts
+			(xy 45.72 72.39) (xy 50.8 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "273041c2-fd90-4c7d-ac07-73ee56ebb0f0")
 	)
 	(wire
 		(pts
@@ -1714,6 +1956,16 @@
 			(type default)
 		)
 		(uuid "298f8af6-c050-413a-a59c-ddffe7c52800")
+	)
+	(wire
+		(pts
+			(xy 40.64 72.39) (xy 45.72 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29a5c649-68e4-4a2e-9ac1-614fc8fff8cd")
 	)
 	(wire
 		(pts
@@ -1817,6 +2069,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 78.74) (xy 38.1 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c408e21-c5e1-449a-9905-b6d37ec8f01b")
+	)
+	(wire
+		(pts
 			(xy 172.72 85.09) (xy 172.72 86.36)
 		)
 		(stroke
@@ -1844,6 +2106,16 @@
 			(type default)
 		)
 		(uuid "6cb2bb5f-915c-4fa6-8375-613a419ab556")
+	)
+	(wire
+		(pts
+			(xy 36.83 86.36) (xy 36.83 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d09516d-332b-447f-9a7f-1fbdb61875fa")
 	)
 	(wire
 		(pts
@@ -1907,13 +2179,33 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 97.79) (xy 138.43 97.79)
+			(xy 40.64 62.23) (xy 45.72 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b5abca0-07af-4269-8de8-5751dc4a7776")
+		(uuid "8973b8b9-094e-44d5-925b-32bd512b9070")
+	)
+	(wire
+		(pts
+			(xy 36.83 87.63) (xy 45.72 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c006415-84d2-46b5-8b53-d33c6ce5adb3")
+	)
+	(wire
+		(pts
+			(xy 40.64 71.12) (xy 40.64 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ea1aac4-2338-4e80-8a1f-86ca42e3bc76")
 	)
 	(wire
 		(pts
@@ -1997,6 +2289,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 60.96) (xy 45.72 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af77ea23-c288-4581-8de3-b1c75fb1b908")
+	)
+	(wire
+		(pts
 			(xy 172.72 72.39) (xy 172.72 77.47)
 		)
 		(stroke
@@ -2007,6 +2309,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 87.63) (xy 45.72 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f61519-22b9-4777-9146-15556d44e55a")
+	)
+	(wire
+		(pts
 			(xy 133.35 102.87) (xy 133.35 109.22)
 		)
 		(stroke
@@ -2014,6 +2326,16 @@
 			(type default)
 		)
 		(uuid "bb0b03dd-456d-4d01-af62-d2e8d4e06aae")
+	)
+	(wire
+		(pts
+			(xy 45.72 72.39) (xy 45.72 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c110e97e-e64c-4342-a602-1f75c8dae799")
 	)
 	(wire
 		(pts
@@ -2077,6 +2399,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 90.17) (xy 45.72 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f31e8259-3aa3-4b1c-84fb-54e88a2ee3af")
+	)
+	(wire
+		(pts
 			(xy 95.25 109.22) (xy 97.79 109.22)
 		)
 		(stroke
@@ -2116,17 +2448,6 @@
 			(justify right)
 		)
 		(uuid "329d31c6-4d12-4d13-b0d5-88db4d04f8e2")
-	)
-	(hierarchical_label "IO7"
-		(shape bidirectional)
-		(at 129.54 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3a77ccf3-e7f6-4f79-a884-2ffe8707a559")
 	)
 	(hierarchical_label "IO15"
 		(shape bidirectional)
@@ -2182,6 +2503,17 @@
 			(justify right)
 		)
 		(uuid "9bb23b16-8fd2-4ca3-a85b-e0e40dfbea35")
+	)
+	(hierarchical_label "VIB_MTR"
+		(shape input)
+		(at 31.75 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b648802d-7a30-4347-bd6b-d0913fbdef93")
 	)
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
@@ -2290,6 +2622,88 @@
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "SDA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 50.8 67.31 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09ab8693-e891-4e85-a069-2be0362fb7bd")
+		(property "Reference" "JP1"
+			(at 53.34 66.0399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 53.34 68.5799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 50.8 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 55.88 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2a8fc08c-0537-4ab9-b18c-6c2fb03fc2e2")
+		)
+		(pin "2"
+			(uuid "4fa84873-276e-4054-aae4-4ae2c5733f6d")
+		)
+		(instances
+			(project "meshtastic-v0"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -2447,6 +2861,85 @@
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 45.72 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e04b940-ae13-4946-b5c3-941a79983148")
+		(property "Reference" "#PWR066"
+			(at 45.72 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 48.26 59.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 45.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e67d184-1b55-49fd-aae8-163e8e59dfb4")
+		)
+		(instances
+			(project "meshtastic-v0"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -2935,6 +3428,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 36.83 82.55 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7b2881c0-4cb6-44fd-8739-6a4b9e784e23")
+		(property "Reference" "R23"
+			(at 38.354 81.534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 38.354 84.074 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 38.608 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "378d5adc-9f09-40bb-ae64-1d5e18de4a4a")
+		)
+		(pin "2"
+			(uuid "d9f61881-9553-4113-91fa-c4168e81e289")
+		)
+		(instances
+			(project "meshtastic-v0"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 90.17 133.35 270)
 		(unit 1)
@@ -3008,6 +3582,84 @@
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "G1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ef6b285-0dc0-4766-9586-f445b21e6896")
+		(property "Reference" "#PWR067"
+			(at 45.72 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8dea3610-ba45-4a73-af84-d82a42a5553d")
+		)
+		(instances
+			(project "meshtastic-v0"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -3248,6 +3900,87 @@
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 40.64 67.31 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9c71764d-358c-4643-9ebf-d2828af97554")
+		(property "Reference" "D9"
+			(at 28.448 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 28.448 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 36.195 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 40.64 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 40.64 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d59f2d03-e249-40f4-8c9d-53b269a469ab")
+		)
+		(pin "2"
+			(uuid "a1d07de2-f235-4ead-92c3-e769aadd0822")
+		)
+		(instances
+			(project "meshtastic-v0"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -3971,6 +4704,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:DMN2040U")
+		(at 43.18 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f23dc9b7-ea99-4175-898d-80c28d54e730")
+		(property "Reference" "Q4"
+			(at 49.53 77.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SI2302"
+			(at 49.53 80.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 48.26 80.645 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN2040U.pdf"
+			(at 48.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "20V Vds, 6A Id, N-Channel MOSFET, SOT-23"
+			(at 43.18 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8680b351-7525-43dd-b174-f51dd10f978a")
+		)
+		(pin "3"
+			(uuid "5b019226-54de-4a51-a290-f583c7447a5b")
+		)
+		(pin "2"
+			(uuid "7a5b675e-5d53-4b1d-8e00-38a275177443")
+		)
+		(instances
+			(project "meshtastic-v0"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 87.63 140.97 0)
 		(unit 1)
@@ -4122,85 +4943,6 @@
 			(project "meshtastic-v0"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "3V3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 138.43 97.79 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd7c35c4-3f7a-4677-9d52-772862b898b2")
-		(property "Reference" "IO7"
-			(at 143.51 96.5199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IO7"
-			(at 143.51 99.0599 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 138.43 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 138.43 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "09232434-b1fc-40d7-ae29-fbcf9a7721cb")
-		)
-		(instances
-			(project "meshtastic-v0"
-				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "IO7")
 					(unit 1)
 				)
 			)

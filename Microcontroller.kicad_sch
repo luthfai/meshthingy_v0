@@ -2463,6 +2463,17 @@
 		)
 		(uuid "727c2f16-5ce4-4456-8f01-dbe22e5b1273")
 	)
+	(hierarchical_label "VIB_MTR"
+		(shape output)
+		(at 105.41 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7f50c7c4-bac0-4f93-9c0b-900d87a83acd")
+	)
 	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
 		(at 105.41 90.17 180)
@@ -2561,17 +2572,6 @@
 			(justify right)
 		)
 		(uuid "bbc7b1ed-1a52-4b15-86dd-eb681cf58dad")
-	)
-	(hierarchical_label "IO7"
-		(shape bidirectional)
-		(at 105.41 72.39 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c7629940-49d4-4614-be2e-e111e61638c2")
 	)
 	(hierarchical_label "PUSH_CCW"
 		(shape input)

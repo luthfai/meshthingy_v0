@@ -673,7 +673,7 @@
         "uuid": "e4d6fcd6-7415-4955-88fd-f0e430797514"
       }
     ],
-    "used_designators": "J1-4,CSN1,BZ1,BOOT1,G1-2,LS1-2,RST1,#PWR1-65,E1,IC1,MISO1,TP12-23,TP26,VS1,MOSI1,SLC1,R1-22,JP1-4,L1-2,CLK1,SW1-4,AE1,C1-24,SDA1,D1-9,U1-11,Q1-3",
+    "used_designators": "VS1,TP12-23,TP26,MISO1,IC1,E1,RST1,LS1-2,G1-2,#PWR1-67,BOOT1,BZ1,CSN1,J1-5,Q1-4,C1-24,U1-11,D1-9,SDA1,AE1,SW1-4,CLK1,L1-2,JP1-4,R1-23,SLC1,MOSI1",
     "variants": []
   },
   "sheets": [
