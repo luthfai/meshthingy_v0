@@ -2419,6 +2419,17 @@
 		)
 		(uuid "5b55f979-3952-4bc5-89f2-cb5f767cd3bb")
 	)
+	(hierarchical_label "VIB_MTR"
+		(shape output)
+		(at 105.41 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5cfc5046-18b7-4699-9111-6a476a046310")
+	)
 	(hierarchical_label "D+"
 		(shape bidirectional)
 		(at 140.97 62.23 0)
@@ -2463,8 +2474,8 @@
 		)
 		(uuid "727c2f16-5ce4-4456-8f01-dbe22e5b1273")
 	)
-	(hierarchical_label "VIB_MTR"
-		(shape output)
+	(hierarchical_label "IO07"
+		(shape bidirectional)
 		(at 105.41 72.39 180)
 		(effects
 			(font
@@ -2472,7 +2483,7 @@
 			)
 			(justify right)
 		)
-		(uuid "7f50c7c4-bac0-4f93-9c0b-900d87a83acd")
+		(uuid "82f46f18-0bde-433e-8d93-b2a402220396")
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
@@ -2616,17 +2627,6 @@
 			(justify left)
 		)
 		(uuid "e88a8e57-5e07-4cc0-8f4a-a382df84d61f")
-	)
-	(hierarchical_label "IO15"
-		(shape bidirectional)
-		(at 105.41 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "eeba6c55-ee9d-4d8e-a7e3-e71cfb9b1b72")
 	)
 	(hierarchical_label "SPI2_MISO"
 		(shape input)

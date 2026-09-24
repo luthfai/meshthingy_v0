@@ -394,16 +394,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 193.04) (xy 276.86 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2663b874-3fc9-415d-b262-ce8bc42aa8c4")
-	)
-	(wire
-		(pts
 			(xy 186.69 69.85) (xy 186.69 78.74)
 		)
 		(stroke
@@ -1256,26 +1246,6 @@
 				(justify left)
 			)
 		)
-		(pin "IO15" bidirectional
-			(at 276.86 193.04 180)
-			(uuid "1512fd0a-6bc6-4925-afcf-d2b17d94f365")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "IO7" bidirectional
-			(at 276.86 190.5 180)
-			(uuid "b00cfaee-8d29-4827-859e-b9ef8c4bde58")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "STATUS_LED" input
 			(at 276.86 195.58 180)
 			(uuid "fb6fba75-ce14-4087-8d82-57ef8c9a0b29")
@@ -1299,6 +1269,16 @@
 		(pin "VIB_MTR" input
 			(at 276.86 172.72 180)
 			(uuid "4222222b-1dd9-442f-8953-a882f37198f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO07" bidirectional
+			(at 276.86 190.5 180)
+			(uuid "183e9026-6489-4584-94b2-0be09cef465d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2274,26 +2254,6 @@
 				(justify left)
 			)
 		)
-		(pin "IO7" bidirectional
-			(at 266.7 190.5 0)
-			(uuid "0091ea02-c4bb-4b44-80f5-d42cf524282f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "IO15" bidirectional
-			(at 266.7 193.04 0)
-			(uuid "0f359aef-4673-4b1c-b587-ce60c20ae279")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "IO47" bidirectional
 			(at 266.7 187.96 0)
 			(uuid "633d008d-1386-4df9-a1f8-7fe250656883")
@@ -2307,6 +2267,16 @@
 		(pin "VIB_MTR" output
 			(at 266.7 172.72 0)
 			(uuid "368c552c-6608-438e-aab4-2ad32afef8b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IO07" bidirectional
+			(at 266.7 190.5 0)
+			(uuid "624caf39-e898-402d-ab0d-7b87b52f3237")
 			(effects
 				(font
 					(size 1.27 1.27)
