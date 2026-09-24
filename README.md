@@ -46,6 +46,7 @@ it becomes a weather station that also extends everyone's range.
 - **LIS3DSH accelerometer** — wake-on-motion and orientation, with interrupt to the MCU
 - **USB-C charging** — BQ24072 Li-Ion charger with power-path, so it runs while charging
 - **JST-PH battery connector** — standard single-cell Li-Ion / LiPo
+- **Vibration motor driver** — SI2302 low-side switch with flyback diode, for silent alerts in a pocket
 - **Buzzer, status LED, and a side lever switch** for headless operation
 - **Test points** on every bus for bring-up and debugging
 
@@ -83,6 +84,7 @@ flowchart TB
         BUZ["LS1 · buzzer"]
         LED["D2 · status LED"]
         SW["U5 · lever switch"]
+        VIB["Q4 · SI2302<br/>vibration motor"]
     end
 
     MCU <==>|"<b>SPI</b> + BUSY/RST/DIO1"| LORA
@@ -92,6 +94,7 @@ flowchart TB
     MCU <-->|"<b>I²C</b> + INT→IO48"| ACC
     MCU --> BUZ
     MCU --> LED
+    MCU -->|IO15| VIB
     SW --> MCU
 
     classDef core fill:#4f46e5,stroke:#3730a3,color:#fff,stroke-width:2px
@@ -103,7 +106,7 @@ flowchart TB
     class LORA,UFL,SMA radio
     class GPS,EEP,BAT2 nav
     class OLED,BME,ACC periph
-    class BUZ,LED,SW ux
+    class BUZ,LED,SW,VIB ux
 ```
 
 ## Power path
@@ -122,6 +125,7 @@ flowchart LR
     RAIL --> M2["LoRa"]
     RAIL --> M3["GNSS"]
     RAIL --> M4["Sensors + OLED"]
+    RAIL --> M5["Buzzer + vib motor"]
 
     classDef src fill:#dc2626,stroke:#991b1b,color:#fff,stroke-width:2px
     classDef conv fill:#ea580c,stroke:#c2410c,color:#fff,stroke-width:2px
@@ -130,7 +134,7 @@ flowchart LR
     class USB,BATT src
     class CHG,BUCK conv
     class RAIL rail
-    class M1,M2,M3,M4 load
+    class M1,M2,M3,M4,M5 load
 ```
 
 ## Board
@@ -139,9 +143,10 @@ flowchart LR
 | --- | --- |
 | **Dimensions** | 71.00 × 46.00 mm, 1.0 mm corner radius |
 | **Stackup** | 2 layers (F.Cu / B.Cu), 1.6 mm |
-| **Components** | 90 footprints, 342 pads (318 SMD, 22 through-hole), 371 vias |
-| **Density** | 65% front, 9% back — almost everything lives on the front |
+| **Components** | 91 footprints, 350 pads (326 SMD, 22 through-hole, 2 NPTH), 373 vias |
+| **Density** | 66% front, 9% back — almost everything lives on the front |
 | **Copper** | GND pour on both layers, with keepout zones under the antennas |
+| **Routing** | Rounded track corners throughout (see `meshtastic-v0.round-tracks-config`) |
 | **Design rules** | 0.175 mm clearance, 0.2 mm minimum track, 0.6 / 0.3 mm vias |
 | **Assembly** | All SMD, 0805 passives — hand-solderable |
 
@@ -154,11 +159,11 @@ prototype fab at standard tolerances.
   <tr>
     <td width="50%" align="center">
       <img src="docs/meshtastic-v0-f.png" alt="Front, populated" width="100%"><br>
-      <sub><b>Front</b> — LoRa and GNSS modules, ESP32-S3, USB-C, buzzer, GPS backup cell</sub>
+      <sub><b>Front</b> — LoRa and GNSS modules, ESP32-S3, USB-C, buzzer, GPS backup cell, motor driver</sub>
     </td>
     <td width="50%" align="center">
       <img src="docs/meshtastic-v0-b.png" alt="Back, populated" width="100%"><br>
-      <sub><b>Back</b> — labelled test points for every bus, plus the SMA edge launch</sub>
+      <sub><b>Back</b> — labelled test points for every bus, vibration motor pads (<code>JP1</code>), SMA edge launch</sub>
     </td>
   </tr>
 </table>
@@ -172,11 +177,11 @@ view is mirrored so its silkscreen reads the right way round.
   <tr>
     <td width="50%" align="center">
       <img src="docs/layers-front.svg" alt="Front copper and silkscreen" width="100%"><br>
-      <sub><b>F.Cu + F.SilkS</b> — signal routing over the front ground pour</sub>
+      <sub><b>F.Cu + F.SilkS</b> — signal routing over the front ground pour; <code>B</code>/<code>R</code> are the boot and reset pads</sub>
     </td>
     <td width="50%" align="center">
       <img src="docs/layers-back.svg" alt="Back copper and silkscreen" width="100%"><br>
-      <sub><b>B.Cu + B.SilkS</b> — mirrored; back pour with the test-point field</sub>
+      <sub><b>B.Cu + B.SilkS</b> — mirrored; back pour with the test-point field and motor pads</sub>
     </td>
   </tr>
 </table>
@@ -215,6 +220,10 @@ kicad-cli pcb export svg --output docs/layers-back.svg \
 | GPS RESET / enable | IO38, IO39 | `U2` |
 | I²C SDA / SCL | IO13 / IO14 | OLED, BME280, LIS3DSH |
 | Accelerometer INT | IO48 | `U10` INT1 |
+| Vibration motor | IO15 | `Q4` gate (10k pull-down `R23`) |
+| Buzzer | IO16 | `Q1` gate (10k pull-down `R11`) |
+| Status LED | IO21 | `D2` via `R22` |
+| Spare / test | IO7, IO47 | back-side test points `IO7`, `IO47` |
 
 ## Schematic layout
 
@@ -223,13 +232,13 @@ The design is hierarchical — root sheet [meshtastic-v0.kicad_sch](meshtastic-v
 | Sheet | Contents |
 | --- | --- |
 | [Power Management](Power%20Management.kicad_sch) | BQ24072 charger, TPS62046 buck, load switching |
-| [Microcontroller](Microcontroller.kicad_sch) | ESP32-S3-WROOM-1 and support |
+| [Microcontroller](Microcontroller.kicad_sch) | ESP32-S3-WROOM-1, boot and reset pads |
 | [LORA](LORA.kicad_sch) | HT-RA62 module, U.FL and SMA antenna paths |
 | [GPS](GPS.kicad_sch) | ATGM336H, AT24C32 EEPROM, backup cell |
 | [Display](Display.kicad_sch) | 0.96" OLED and its pinout-select jumpers |
 | [Air Sensors](Air%20Sensors.kicad_sch) | BME280 |
 | [Accelerometer](Accelerometer.kicad_sch) | LIS3DSH |
-| [Peripherals](Peripherals.kicad_sch) | EEPROM, buzzer, LED, buttons |
+| [Peripherals](Peripherals.kicad_sch) | Buzzer and vibration motor drivers, status LED, test points |
 | [Connectors](Connectors.kicad_sch) | USB-C receptacle, JST-PH battery |
 
 ## Building it
@@ -260,8 +269,16 @@ Generated outputs are gitignored — regenerate them, or attach them to a releas
 `JP3` and `JP4` are three-way solder jumpers that select which OLED pin gets
 `+3V3` and which gets `GND`, so the footprint accepts display modules with either
 pinout. They ship **unbridged** — bridge them to match the module you source
-before expecting the display to light up. `JP1` and `JP2` are two-way jumpers,
-also unbridged.
+before expecting the display to light up.
+
+`JP1` on the back is not a jumper. It's the pair of solder pads for the vibration
+motor. Solder a coin or pager-style motor's leads across it: the pad on the
+`+3V3` side takes the red lead and the pad on the `Q4` drain side takes the black
+lead. `D9` clamps the motor's flyback, so the motor runs straight off the
+`+3V3` rail.
+
+`B` and `R` on the front are the **BOOT** and **RESET** pads. To put the ESP32-S3
+into the ROM bootloader, short `B` while you tap `R`.
 
 ## Firmware
 
